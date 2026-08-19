@@ -1,21 +1,3 @@
-/*
-  AO3 SKIN — RED / CHARCOAL / TAUPE PALETTE
-  Palette sampled from the supplied image:
-  #89080E  #161012  #86795E  #7B413A
-  #2C3030  #361617  #67574B  #5B0710
-
-  Header source requested:
-  https://64.media.tumblr.com/b99d4b5637ea3124264e4c74a884121d/48e6cf6bf2e45367-5d/s1280x1920/0c84fa6e31a1e364224bd14dd9eba6fafe3e4c0d.jpg
-
-  Outer wrapper source requested:
-  https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/kseniya-lapteva-GP2sJoqnuXI-unsplash.jpg
-
-  IMPORTANT:
-  Tumblr and Pinterest share/page URLs are not guaranteed to be direct image-file URLs.
-  AO3/browser CSS background-image works reliably with a direct HTTPS image asset
-  (for example an i.pinimg.com / Tumblr CDN .jpg/.png/.webp URL).
-*/
-
 #header {
   background-image: url("https://64.media.tumblr.com/b99d4b5637ea3124264e4c74a884121d/48e6cf6bf2e45367-5d/s1280x1920/0c84fa6e31a1e364224bd14dd9eba6fafe3e4c0d.jpg");
   background-repeat: no-repeat;
@@ -40,7 +22,7 @@
 
 #outer.wrapper {
   background: #361617;
-  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/kseniya-lapteva-GP2sJoqnuXI-unsplash.jpg");
+  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/meg-jNZ97-wyGbA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -508,7 +490,7 @@ body {
 
 #outer.wrapper {
   background-color: #361617 !important;
-  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/kseniya-lapteva-GP2sJoqnuXI-unsplash.jpg") !important;
+  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/meg-jNZ97-wyGbA-unsplash.jpg") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center top !important;
@@ -1479,10 +1461,6 @@ form.search input[type="text"]:focus {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
 }
 
-/* =========================================================
-   FINAL PALETTE PASS
-   ========================================================= */
-
 body {
   background-color: #161012 !important;
   color: #d8cdba !important;
@@ -1490,7 +1468,7 @@ body {
 
 #outer.wrapper {
   background-color: #161012 !important;
-  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/kseniya-lapteva-GP2sJoqnuXI-unsplash.jpg") !important;
+  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/meg-jNZ97-wyGbA-unsplash.jpg") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center top !important;
@@ -1508,8 +1486,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: center 52% !important;
   background-size: cover !important;
-  box-shadow:
-    inset 0 -52px 52px rgba(22, 16, 18, 0.62),
+  box-shadow: inset 0 -52px 52px rgba(22, 16, 18, 0.62),
     inset 0 1px 0 rgba(255, 255, 255, 0.07),
     0 8px 24px rgba(0, 0, 0, 0.40) !important;
 }
@@ -1518,8 +1495,7 @@ body {
   background-color: rgba(54, 22, 23, 0.88) !important;
   border-top: 1px solid rgba(134, 121, 94, 0.16) !important;
   border-bottom: 1px solid rgba(134, 121, 94, 0.30) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.055),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055),
     0 4px 14px rgba(0, 0, 0, 0.28) !important;
 }
 
@@ -1552,8 +1528,7 @@ body {
 .autocomplete div.dropdown ul {
   background-color: rgba(54, 22, 23, 0.97) !important;
   border: 1px solid rgba(134, 121, 94, 0.22) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045),
     0 8px 22px rgba(0, 0, 0, 0.36) !important;
 }
 
@@ -1581,8 +1556,7 @@ form.search input[type="text"]:focus {
 #main {
   background-color: rgba(44, 48, 48, 0.90) !important;
   border: 1px solid rgba(134, 121, 94, 0.18) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045),
     0 10px 30px rgba(0, 0, 0, 0.34) !important;
 }
 
@@ -1764,30 +1738,16 @@ td:hover {
   filter: sepia(28%) saturate(135%) hue-rotate(315deg) brightness(82%) contrast(96%);
 }
 
-
-
-/* =========================================================
-   FILTER PANEL — LAYOUT-SAFE AO3 REFINEMENT
-   Important: this pass deliberately does NOT change the
-   filter sidebar's width, float, position, or outer padding.
-   That keeps AO3's native two-column layout intact.
-   ========================================================= */
-
-/* Outer panel: visual treatment only, no layout geometry */
 #main .filters,
 .filters,
 fieldset.filters {
   background-color: rgba(38, 18, 20, 0.88) !important;
   border: 1px solid rgba(134, 121, 94, 0.18) !important;
   border-radius: 14px !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035),
     0 7px 20px rgba(0, 0, 0, 0.20) !important;
 }
 
-/* Prevent controls from becoming wider than AO3's sidebar.
-   The previous version added padding to the sidebar itself,
-   which could make the floated column no longer fit. */
 #main .filters select,
 #main .filters input[type="text"],
 #main .filters textarea,
@@ -1800,7 +1760,6 @@ fieldset.filters {
   max-width: 100% !important;
 }
 
-/* Keep AO3's own fieldset/list spacing; only soften their surfaces */
 #main .filters fieldset,
 #main .filters .listbox,
 .filters fieldset,
@@ -1810,7 +1769,6 @@ fieldset.filters {
   box-shadow: none !important;
 }
 
-/* Section titles */
 #main .filters legend,
 #main .filters h3,
 #main .filters h4,
@@ -1823,8 +1781,6 @@ fieldset.filters {
   text-shadow: none !important;
 }
 
-/* Ratings / Warnings / Categories / etc.
-   No display, width, margin, or positioning overrides here. */
 #main .filters dt,
 .filters dt {
   background-color: rgba(22, 16, 18, 0.42) !important;
@@ -1860,7 +1816,6 @@ fieldset.filters {
   color: #f4eee6 !important;
 }
 
-/* Inputs */
 #main .filters select,
 #main .filters input[type="text"],
 #main .filters textarea,
@@ -1871,8 +1826,7 @@ fieldset.filters {
   color: #f4eee6 !important;
   border: 1px solid rgba(134, 121, 94, 0.18) !important;
   border-radius: 7px !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.025),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025),
     0 2px 6px rgba(0, 0, 0, 0.10) !important;
 }
 
@@ -1884,20 +1838,17 @@ fieldset.filters {
 .filters textarea:focus {
   background-color: rgba(22, 16, 18, 0.90) !important;
   border-color: rgba(134, 121, 94, 0.34) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035),
     0 0 4px rgba(134, 121, 94, 0.08) !important;
 }
 
-/* Sort and Filter / submit button */
 #main .filters input[type="submit"],
 .filters input[type="submit"] {
   background-color: rgba(105, 8, 15, 0.94) !important;
   color: #f4eee6 !important;
   border: 1px solid rgba(134, 121, 94, 0.24) !important;
   border-radius: 9px !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045),
     0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -1907,7 +1858,6 @@ fieldset.filters {
   border-color: rgba(134, 121, 94, 0.32) !important;
 }
 
-/* Help icons and labels */
 #main .filters label,
 #main .filters .required,
 #main .filters .help,
@@ -1917,18 +1867,10 @@ fieldset.filters {
   color: #d8cdba !important;
 }
 
-/* Emergency layout guard:
-   preserve AO3's inherited/sidebar width instead of expanding it. */
 #main .filters,
 .filters {
   max-width: 100% !important;
 }
-
-
-/* --- Responsive header image handling ---
-   "cover" will always crop differently on different screens.
-   The cleanest improvement is to tune both height and focal point
-   per breakpoint so desktop crops less aggressively. */
 
 #header {
   min-height: 235px !important;
@@ -1936,35 +1878,28 @@ fieldset.filters {
   background-position: center 42% !important;
 }
 
-@media (max-width: 680px) {
-  #header {
-    min-height: 185px !important;
-    background-position: center 50% !important;
-  }
-
-  #outer.wrapper {
-    background-attachment: scroll !important;
-  }
+#header {
+  min-height: 185px !important;
+  background-position: center 50% !important;
 }
 
-@media (min-width: 681px) and (max-width: 1099px) {
-  #header {
-    min-height: 235px !important;
-    background-position: center 44% !important;
-  }
+#outer.wrapper {
+  background-attachment: scroll !important;
 }
 
-@media (min-width: 1100px) {
-  #header {
-    min-height: 285px !important;
-    background-position: center 40% !important;
-  }
+#header {
+  min-height: 235px !important;
+  background-position: center 44% !important;
+}
+
+#header {
+  min-height: 285px !important;
+  background-position: center 40% !important;
 }
 
 #header .primary {
   background-color: rgba(54, 22, 23, 0.91) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 4px 14px rgba(0, 0, 0, 0.28) !important;
 }
 
@@ -1972,18 +1907,11 @@ fieldset.filters {
   border-radius: 18px !important;
 }
 
-
-/* =========================================================
-   OUTER WRAPPER — GITHUB RAW IMAGE
-   AO3-safe direct .jpg URL + long-chapter sharpness fix
-   ========================================================= */
-
 #outer.wrapper {
   background-color: #161012 !important;
-  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/kseniya-lapteva-GP2sJoqnuXI-unsplash.jpg") !important;
+  background-image: url("https://raw.githubusercontent.com/callme-iris/AO3-burgundy-theme/main/meg-jNZ97-wyGbA-unsplash.jpg") !important;
   background-size: 100% auto !important;
   background-repeat: repeat-y !important;
   background-position: center top !important;
   background-attachment: scroll !important;
 }
-
